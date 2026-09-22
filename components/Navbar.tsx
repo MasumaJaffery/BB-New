@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "About Us", href: "/about" },
+  { label: "About Us", href: "#about" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
   { label: "Our Process", href: "/process" },
