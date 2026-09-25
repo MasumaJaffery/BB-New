@@ -30,13 +30,13 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full bg-white px-12 py-14">
+    <section className="w-full bg-white px-5 py-10 md:px-8 md:py-12 lg:px-12 lg:py-14">
       <div className="mx-auto max-w-[1180px]">
         <p className="mb-8 text-center text-[14px] font-semibold uppercase tracking-[0.06em] text-[#182942]">
           Why Choose Brunswick Builders?
         </p>
 
-        <div className="grid grid-cols-4 gap-0">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-0">
           {reasons.map((reason, index) => {
             const Icon = reason.icon;
 
@@ -44,12 +44,15 @@ export default function WhyChooseUs() {
               <div
                 key={reason.title}
                 className={[
-                  "flex items-start gap-4 px-6 py-5",
-                  index !== 0 ? "border-l border-[#dfcdb5]" : "",
+                  "flex items-start gap-4 px-6 py-5 md:px-5 md:py-4 lg:px-6 lg:py-5",
+                  index !== 0
+                    ? "border-t border-[#dfcdb5] md:border-l md:border-t-0"
+                    : "",
+                  index === 2 ? "lg:border-l lg:border-t-0" : "",
                 ].join(" ")}
               >
                 <Icon
-                  className="mt-0.5 h-[25px] w-[25px] shrink-0 text-[#17263d]"
+                  className="mt-0.5 h-[20px] w-[20px] shrink-0 text-[#17263d] md:h-[25px] md:w-[25px]"
                   strokeWidth={1.35}
                 />
 

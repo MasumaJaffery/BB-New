@@ -12,16 +12,16 @@ const services: Service[] = [
 ];
 
 export default function ServicesSection() {
-  return <section aria-labelledby="services-heading" className="bg-white px-5 py-20 text-[#14263e]">
+  return <section aria-labelledby="services-heading" className="bg-white px-5 py-12 text-[#14263e] md:px-8 md:py-16 lg:py-20">
     <div className="mx-auto max-w-[1450px]">
-      <div className="mb-10 text-center">
-        <div className="mb-3 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.06em]">What We Do<span aria-hidden="true" className="h-px w-8 bg-[#d9bd97]" /></div>
-        <h2 id="services-heading" className="text-[40px] font-semibold tracking-tight">Comprehensive Construction Services</h2>
+      <div className="mb-8 text-center md:mb-10">
+        <div className="mb-3 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.06em] md:text-xs">What We Do<span aria-hidden="true" className="h-px w-8 bg-[#d9bd97]" /></div>
+        <h2 id="services-heading" className="text-[30px] font-semibold tracking-tight md:text-4xl">Comprehensive Construction Services</h2>
       </div>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {services.map(service => <article key={service.title} className="flex h-full flex-col border border-[#e8ebef] bg-white shadow-sm shadow-[#17283e]/[0.03]">
-          <div className="relative h-40 w-full overflow-hidden"><Image src={service.image} alt="" fill sizes="25vw" className="object-cover" /></div>
-          <div className="relative flex flex-1 flex-col px-6 pb-6">
+          <div className="relative h-40 w-full overflow-hidden md:h-44 lg:h-40"><Image src={service.image} alt="" fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" className="object-cover" /></div>
+          <div className="relative flex flex-1 flex-col px-5 pb-6 md:px-6">
             <div className="-mt-7 mb-4 flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-[#142b48] text-white shadow-sm"><svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{service.icon}</svg></div>
             <h3 className="max-w-[190px] text-lg font-semibold leading-tight">{service.title}</h3>
             <p className="mt-2 flex-1 text-sm leading-6 text-[#5e6670]">{service.description}</p>

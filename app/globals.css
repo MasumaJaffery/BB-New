@@ -5,3 +5,38 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 767px) {
+  .hero-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .hero-marquee-track {
+    width: max-content;
+    animation: hero-marquee-scroll 18s linear infinite;
+  }
+
+  .hero-marquee-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-marquee,
+  .hero-marquee-track {
+    animation: none !important;
+    transform: none !important;
+    width: auto !important;
+    overflow: visible !important;
+  }
+}
+
+@keyframes hero-marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

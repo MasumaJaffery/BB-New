@@ -7,6 +7,7 @@ import OurProcess from "@/components/OurProcess";
 import TestimonialBanner from "@/components/TestimonialBanner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CTAFooter from "@/components/CTA-Footer";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <TestimonialBanner />
       <WhyChooseUs />
       <CTAFooter />
+      <Chatbot />
     </main>
   );
 }
