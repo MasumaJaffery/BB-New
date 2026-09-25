@@ -27,8 +27,8 @@ export default function Hero() {
       </div>
 
       {/* Hero content */}
-      <div className="mx-auto flex min-h-[580px] max-w-[1360px] flex-col justify-center px-6 py-14 lg:px-0">
-        <h1 className="max-w-[620px] text-[42px] font-bold uppercase leading-[0.98] tracking-[-0.025em] text-white sm:text-[56px]">
+      <div className="mx-auto flex min-h-[620px] max-w-[1360px] flex-col justify-center px-6 py-14">
+        <h1 className="max-w-[620px] text-[56px] font-bold uppercase leading-[0.98] tracking-[-0.025em] text-white">
           Building
           <br />
           Stronger Futures.
@@ -36,13 +36,13 @@ export default function Hero() {
           <span className="text-gold-400">Together.</span>
         </h1>
 
-        <p className="mt-7 max-w-[490px] text-[13px] leading-[1.75] text-white/90 sm:text-sm">
+        <p className="mt-7 max-w-[490px] text-sm leading-[1.75] text-white/90">
           Brunswick Builders, LLC is a construction management and general
           contracting firm delivering exceptional results with integrity,
           transparency and unmatched attention to detail.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-5">
+        <div className="mt-8 flex w-auto flex-row flex-wrap gap-5">
           <Link
             href="/projects"
             className="min-w-[220px] bg-navy-700 px-7 py-4 text-center text-[11px] font-semibold tracking-wide text-white transition-colors hover:bg-navy-600"
@@ -58,9 +58,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Stats bar */}
       <div className="relative border-t border-white/10 bg-navy-900">
-        <div className="mx-auto grid min-h-[98px] max-w-[1360px] grid-cols-2 gap-x-8 gap-y-6 px-6 py-5 sm:grid-cols-4 lg:px-0">
+        <div className="mx-auto grid min-h-[98px] max-w-[1360px] grid-cols-4 gap-x-8 px-0 py-5">
           {STATS.map(({ icon: Icon, value, label }) => (
             <div key={label} className="flex items-center gap-5">
               <Icon className="h-10 w-10 shrink-0 text-gold-400" strokeWidth={1.35} />

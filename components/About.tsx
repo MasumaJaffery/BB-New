@@ -4,8 +4,7 @@ import Link from "next/link";
 export default function AboutSection() {
   return (
     <section className="w-full overflow-hidden bg-white" id="about">
-      <div className="mx-auto grid w-full max-giw-[1200px] items-center gap-10 px-6 py-16 md:grid-cols-2 md:gap-12 md:px-10 lg:gap-20 lg:py-20">
-        {/* Text */}
+      <div className="mx-auto grid w-full max-w-[1200px] grid-cols-2 items-center gap-12 px-10 py-20">
         <div>
           <div className="flex items-center gap-3">
             <span className="text-[10px] font-semibold uppercase tracking-[0.04em] text-[#18304D]">
@@ -14,7 +13,7 @@ export default function AboutSection() {
             <span className="h-px w-5 bg-[#D8B58E]" />
           </div>
 
-          <h2 className="mt-5 text-[28px] font-bold leading-[1.15] tracking-[-0.5px] text-[#142941] sm:text-[34px] lg:text-[40px]">
+          <h2 className="mt-5 text-[40px] font-bold leading-[1.15] tracking-[-0.5px] text-[#142941]">
             Built on experience.
             <br />
             Driven by craftsmanship.
@@ -38,9 +37,8 @@ export default function AboutSection() {
           </Link>
         </div>
 
-        {/* Image */}
-        <div className="relative mr-4 mb-4 sm:mr-5 sm:mb-5">
-          <div className="pointer-events-none absolute -right-4 -bottom-4 h-2/3 w-1/2 bg-[#F0ECE7] sm:-right-5 sm:-bottom-5" />
+        <div className="relative mr-5 mb-5">
+          <div className="pointer-events-none absolute -right-5 -bottom-5 h-2/3 w-1/2 bg-[#F0ECE7]" />
 
           <div
             aria-hidden="true"
@@ -52,7 +50,7 @@ export default function AboutSection() {
               src="/images/About.png"
               alt="Brunswick Builders construction project"
               fill
-              sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 520px"
+              sizes="520px"
               className="object-cover"
             />
           </div>

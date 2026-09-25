@@ -1,8 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Services from "@/components/ServicesSection";
+import Services from "@/components/Services";
 import FeaturedProjects from "@/components/FeaturedProjects";
+import OurProcess from "@/components/OurProcess";
+import TestimonialBanner from "@/components/TestimonialBanner";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import CTAFooter from "@/components/CTA-Footer";
 
 export default function Home() {
   return (
@@ -12,7 +16,10 @@ export default function Home() {
       <About />
       <Services />
       <FeaturedProjects />
-      {/* rest of the homepage sections go here */}
+      <OurProcess />
+      <TestimonialBanner />
+      <WhyChooseUs />
+      <CTAFooter />
     </main>
   );
 }
